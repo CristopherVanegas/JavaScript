@@ -11,6 +11,11 @@ edad = 30;
 
 
 // ARRAY
-
 var elemento = ["computador", "celular"];
+
+// OBJECT VARIABLE
+var persona = {
+    nombre: "Cristopher",
+    edad: 30
+}
 
