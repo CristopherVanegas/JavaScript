@@ -10,8 +10,14 @@ miFuncion();
 var miSegundaFuncion = function(a, b) {
     return a + b;
 }
-
 miSegundaFuncion(5, 7);
+
+
+// EJEMPLO DE FUNCIÓN EXPRESIVA O ANONIMA
+var saludandoEstudiantes = function(estudiante) {
+    console.log(`Hola ${estudiante}!`);
+}
+saludandoEstudiantes("Julo")
 
 
 // TEMPLATE STRING
