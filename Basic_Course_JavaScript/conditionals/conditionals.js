@@ -10,7 +10,6 @@ if (edad  === 18) {
 }
 
 
-
 /*  PRIMARY OPERATOR condition ? true : false;  */
 
 var numero = 2;
