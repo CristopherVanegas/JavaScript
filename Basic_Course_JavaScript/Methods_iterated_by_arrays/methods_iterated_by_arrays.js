@@ -1,4 +1,3 @@
-
 var articulos = [
     { nombre: "Bici", costo: 3000 },
     { nombre: "TV", costo: 2500 },
@@ -10,30 +9,18 @@ var articulos = [
 ];
 
 
-// filter()
-
+// filter()    ->    To iterate EACH item that applies the condition we specified before.
 var articulosFiltrados = articulos.filter(function(articulo) {
     return articulo.costo <= 500;
 });
-
 
 console.log(articulosFiltrados);
 
 
 
-// map()
-
+// map()    ->    To iterate EVERY item without the costs.
 var nombreArticulos = articulos.map(function (articulo) {
-    if (articulo.costo >= 500) {
-        return articulo.nombre = 'B'
-
-    } else if (articulo.costo < 500) {
-        //let nuevoArticulo = articulo.nombre;
-        //nuevoArticulo = "A";
-        return articulo.nombre = 'A';
-        //return articulo.nombre = 'A';
-
-    }
+    return articulo.nombre;
 });
 
 console.log(nombreArticulos);
