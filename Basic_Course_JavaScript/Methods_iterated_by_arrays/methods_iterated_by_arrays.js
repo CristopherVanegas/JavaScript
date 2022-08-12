@@ -24,10 +24,16 @@ console.log(articulosFiltrados);
 // map()
 
 var nombreArticulos = articulos.map(function (articulo) {
-    if (articulo.costo > 500) {
-        return articulo.nombre;
+    if (articulo.costo >= 500) {
+        return articulo.nombre = 'B'
+
+    } else if (articulo.costo < 500) {
+        //let nuevoArticulo = articulo.nombre;
+        //nuevoArticulo = "A";
+        return articulo.nombre = 'A';
+        //return articulo.nombre = 'A';
+
     }
-    
 });
 
 console.log(nombreArticulos);
