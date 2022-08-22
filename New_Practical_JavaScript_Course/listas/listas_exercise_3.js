@@ -13,12 +13,7 @@ const precioFrutas = {
 
 function elements (object) {
     console.log('Prices: ')
-/*
-    for (let element = 0; element <= object.length; element++) {
-        console.log(`    ${element}: ${object}`);
-    }
-*/
-    
+
     for (let element in object) {
         console.log(`    ${element}: ${object[element]}`);
     }
@@ -26,5 +21,4 @@ function elements (object) {
 }
 
 elements(precioFrutas);
-
 
