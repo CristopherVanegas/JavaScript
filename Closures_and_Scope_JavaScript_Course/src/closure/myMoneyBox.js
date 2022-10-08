@@ -9,8 +9,16 @@ function moneyBox() {
     return countCoins;
 }
 
-const myMoneyBox = moneyBox();
+const CristopherCount = moneyBox();
+const JessCount = moneyBox();
 
-myMoneyBox(5);
-myMoneyBox(19);
-myMoneyBox(20);
+console.log("Cristopher's count: ");
+CristopherCount(5);
+CristopherCount(19);
+CristopherCount(20);
+console.log('');
+
+console.log("Jess's count: ");
+JessCount(10);
+JessCount(25);
+JessCount(30);
