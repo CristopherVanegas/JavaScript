@@ -1,18 +1,21 @@
 // importing mysql module
-const mysql = require('mysql');
+import { createConnection } from 'mysql';
+// const mysql = require('mysql');
+
 
 // configurations for creating mysql connection
-const connection = mysql.createConnection({
+const connection = createConnection({
         host: 'localhost',  // host for connection
         port: 3306,         // default port for mysql is 3306
-        database: 'test',   // database from which we want to connect out node application
+        database: 'holamundo',   // database from which we want to connect out node application
         user: 'root',       // username of the mysql connection
-        password: 'root'    // password of the mysql connection
+        password: '<Jkali_21.mint.mysql>',    // password of the mysql connection
+        connectionLimit: 10
 });
 
 
 // executing connection
-connection.connect(function (error) {
+connection.connect(function (err) {
     if (err) {
         console.log("error ocurred while connecting");
     }
