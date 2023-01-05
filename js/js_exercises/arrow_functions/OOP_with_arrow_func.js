@@ -1,3 +1,6 @@
+// New JS script to see how are the differences between conventional funcs and arrow funcs
+// in scopes.
+
 class Person {
     constructor(name) {
         this.name = name
